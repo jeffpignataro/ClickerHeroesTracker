@@ -7,7 +7,7 @@ env:
   - CLI_VERSION=latest
 solution: ClickerHeroesTrackerWebsite.sln
 install:
-  - nuget restore solution-name.sln
+  - nuget restore ClickerHeroesTrackerWebsite.sln
   - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release ClickerHeroesTrackerWebsite.sln
